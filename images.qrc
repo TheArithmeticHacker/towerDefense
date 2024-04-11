@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/C:\Users\AUC\Downloads\ClashofClans\imagees">
+        <file>imagees/map_background.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>imagees/Clan_Castle.png</file>
+    </qresource>
+</RCC>
