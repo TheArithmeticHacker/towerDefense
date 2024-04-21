@@ -9,6 +9,6 @@ Worker::Worker(QObject* parent) : QObject(parent)
 
 void Worker::startWorking()
 {
-    // Simulate work
+    int repairAmount = 10;
     emit workFinished();
 }
