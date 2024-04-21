@@ -3,6 +3,9 @@
         <file>Images/Map.jpg</file>
         <file>Images/Castle.jpg</file>
         <file>Images/goblin.png</file>
+        <file>Images/cannon.jpg</file>
+        <file>Images/Effect.png</file>
+        <file>Images/Explosion.jpg</file>
     </qresource>
     <qresource prefix="/loc">
         <file>locations/loc.txt</file>

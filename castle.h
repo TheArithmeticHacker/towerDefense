@@ -12,6 +12,8 @@ public:
     void decrease();
 
     bool isCrushed();
+public slots:
+    void createEnemies();
 };
 
 #endif // CASTLE_H

@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     castle.cpp \
     enemy.cpp \
+    explosion.cpp \
     locations.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     castle.h \
     enemy.h \
+    explosion.h \
     mainwindow.h \
     tower.h
 
