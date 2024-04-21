@@ -5,4 +5,5 @@
     <qresource prefix="/">
         <file>imagees/Clan_Castle.png</file>
     </qresource>
+    <qresource prefix="/img"/>
 </RCC>

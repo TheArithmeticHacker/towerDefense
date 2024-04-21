@@ -2,6 +2,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
 #include <QApplication>
+#include "castle.h"
 
 class Map : public QGraphicsView {
 public:
@@ -9,15 +10,17 @@ public:
         QGraphicsScene *scene = new QGraphicsScene;
         setScene(scene);
 
-        QPixmap mapBackground("C:\\Users\\AUC\\Downloads\\ClashofClans\\imagees\\map_background.jpg");
-        QGraphicsPixmapItem *backgroundItem = new QGraphicsPixmapItem(mapBackground);
+        QPixmap mapBackground(":/img/Images/Map.jpg");
+        QGraphicsPixmapItem *backgroundItem = new QGraphicsPixmapItem(mapBackground.scaled(800, 800));
         scene->addItem(backgroundItem);
         backgroundItem->setPos(0, 0);
 
-        QPixmap castle("C:\\Users\\AUC\\Downloads\\ClashofClans\\imagees\\Clan_Castle.png");
-        QGraphicsPixmapItem *castleItem = new QGraphicsPixmapItem(castle);
-        castleItem->setPos(450, 280);
+        Castle* castleItem = new Castle();
         scene->addItem(castleItem);
+
+        setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        setFixedSize(800, 800);
 
     }
     };
@@ -25,7 +28,6 @@ public:
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     Map map;
-    map.resize(1000, 800);
     map.show();
     return a.exec();
 }
