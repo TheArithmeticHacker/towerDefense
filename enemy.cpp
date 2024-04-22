@@ -22,7 +22,7 @@ Enemy::Enemy(QGraphicsScene* scene, Castle* targetCastle) : QGraphicsPixmapItem(
 
     setPos(QPointF(600, 450));
 }
-
+/*
 void Enemy::attackCastle(Castle* target) {
     target->decrease();
 }
@@ -62,7 +62,7 @@ void Enemy::moveToTarget() {
 
     setPos(pos().x() + vx, pos().y() + vy);
 }
-/*
+*/
 void Enemy::move() {
     setPos(pos().x() - 10, pos().y());
     QList<QGraphicsItem*> colliding = collidingItems();
@@ -73,4 +73,3 @@ void Enemy::move() {
         }
     }
 }
-*/

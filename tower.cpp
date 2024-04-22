@@ -25,7 +25,15 @@ Tower::Tower(QGraphicsScene* scene, Castle* cs) {
     coolDown = 3;
 }
 
+bool Tower::isValid(int x1, int y1){
+    if(x1 < 450)
+        if(x1 > 150)
+            if(y1 < 450)
+                if(y1 > 150)
+                    return true;
 
+    return false;
+}
 
 void Tower::createEnemy(QGraphicsScene* sc, Castle* cs){
     Enemy* ene = new Enemy(sc, cs);

@@ -18,13 +18,13 @@ public:
     int x, y;
     QGraphicsScene* w;
     Castle* target;
-
+    /*
     void attackCastle(Castle*);
     void attackWall(Wall*);
     void moveToTarget();
     void spawnAtRandomPosition();
     void attack();
-
+*/
 
 public slots:
     void move();
