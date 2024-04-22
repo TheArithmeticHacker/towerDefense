@@ -9,9 +9,7 @@ Castle::Castle() {
     setPos(339, 339);
     health = 100;
 
-    QTimer * time = new QTimer();
-    QObject::connect(time, SIGNAL(timeout()),this,SLOT(createEnemies()));
-    time->start(2000);
+
 }
 
 void Castle::decrease(){
@@ -24,8 +22,4 @@ bool Castle::isCrushed(){
     return (health == 0);
 }
 
-void Castle::createEnemies(){
-    Enemy* ene = new Enemy();
-    qDebug("Testing");
-    scene()->addItem(ene);
-}
+

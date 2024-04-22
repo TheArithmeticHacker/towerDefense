@@ -5,6 +5,7 @@
 #include <QMouseEvent>
 #include <QGraphicsScene>
 #include <QGraphicsScene>
+#include "castle.h"
 
 class Tower: public QObject, public QGraphicsPixmapItem
 {
@@ -15,11 +16,13 @@ private:
     bool primeState;
     QGraphicsScene* w;
 public:
-    Tower(QGraphicsScene*);
+    Tower(QGraphicsScene*, Castle*);
 
 
 
     bool isValid(int x, int y);
+public slots:
+    void createEnemy(QGraphicsScene*, Castle*);
 
 
 };

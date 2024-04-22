@@ -1,4 +1,4 @@
-#include "worker.h"
+#include "Workers.h"
 
 Worker::Worker(QObject* parent) : QObject(parent)
 {

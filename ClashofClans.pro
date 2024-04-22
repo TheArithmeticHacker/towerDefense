@@ -15,14 +15,20 @@ SOURCES += \
     locations.cpp \
     main.cpp \
     mainwindow.cpp \
-    tower.cpp
+    map.cpp \
+    tower.cpp \
+    wall.cpp \
+    Workers.cpp
 
 HEADERS += \
     castle.h \
     enemy.h \
     explosion.h \
     mainwindow.h \
-    tower.h
+    map.h \
+    tower.h \
+    Workers.h \
+    wall.h
 
 FORMS += \
     mainwindow.ui

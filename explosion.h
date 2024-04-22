@@ -7,8 +7,11 @@ private:
     QGraphicsScene* w;
 public:
     Explosion(QGraphicsScene*);
-public slots:
+
     void explode(int x, int y);
+public slots:
+    void move();
+
 };
 
 #endif // EXPLOSION_H
